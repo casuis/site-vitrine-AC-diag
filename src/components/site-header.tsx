@@ -69,8 +69,8 @@ export function SiteHeader() {
             className={`${isScrolled ? "shadow-[0_14px_30px_-16px_rgba(15,23,42,0.65)]" : "shadow-[0_16px_32px_-16px_rgba(15,23,42,0.7)]"} uppercase tracking-[0.2em]`}
           >
             <Link href="/devis" className="flex items-center gap-2">
-              <Mail className="h-4 w-4" />
-              <Text as="span" style={3} text="Devis" className="!text-white" />
+              <Mail className="h-4 w-4 text-white transition-colors duration-300 ease-out group-hover:text-[#164480]" />
+              <Text as="span" style={3} text="Devis Gratuit" className="!text-white transition-colors duration-300 ease-out group-hover:!text-[#164480]" />
             </Link>
           </Button>
           <Button
@@ -80,8 +80,8 @@ export function SiteHeader() {
             aria-label="Appeler AC Diagnostics"
             className={
               isScrolled
-                ? "border-primary bg-white text-primary shadow-[0_12px_28px_-18px_rgba(15,23,42,0.6)] hover:bg-primary hover:text-white"
-                : "border-white bg-white text-black shadow-[0_14px_30px_-18px_rgba(15,23,42,0.68)] hover:bg-primary hover:text-white"
+                ? "border-primary bg-white text-primary shadow-[0_12px_28px_-18px_rgba(15,23,42,0.6)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
+                : "border-white bg-white text-black shadow-[0_14px_30px_-18px_rgba(15,23,42,0.68)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
             }
           >
             <a href="tel:+33000000000">

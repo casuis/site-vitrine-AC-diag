@@ -15,7 +15,7 @@ export function ServicesSection() {
   const SelectedIcon = selectedDiagnostic.icon
 
   return (
-    <section id="services" className="border-y bg-white py-20">
+    <section id="services" className="w-[100%] max-w-[100vw] border-y bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-normal text-secondary">

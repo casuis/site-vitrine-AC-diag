@@ -1,6 +1,9 @@
 import type { LucideIcon } from "lucide-react"
 import {
   BadgeCheck,
+  CalendarCheck2,
+  Clock3,
+  FileText,
   Flame,
   Gauge,
   PlugZap,
@@ -53,8 +56,14 @@ export const processSteps = [
   "Rapport transmis rapidement, pret pour le notaire ou l'agence",
 ]
 
-export const heroHighlights = [
-  ["Rapports", "rapides"],
-  ["Devis", "personnalise"],
-  ["Intervention", "sur rendez-vous"],
+export type HeroHighlight = {
+  label: string
+  value: string
+  icon: LucideIcon
+}
+
+export const heroHighlights: HeroHighlight[] = [
+  { label: "Rapports", value: "rapides", icon: Clock3 },
+  { label: "Devis", value: "personnalise", icon: FileText },
+  { label: "Intervention", value: "sur rendez-vous", icon: CalendarCheck2 },
 ]

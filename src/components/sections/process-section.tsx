@@ -34,7 +34,7 @@ export function ProcessSection() {
   }, [])
 
   return (
-    <section id="methode" ref={sectionRef} className="bg-green-700 py-20 text-white">
+    <section id="methode" ref={sectionRef} className="bg-blue-700 py-20 text-white">
       <div className="m-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
         <div className="lg:flex lg:items-center">
           <div>
