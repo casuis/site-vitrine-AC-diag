@@ -8,17 +8,10 @@ devis : type de bien: apparte / maison / (locaux tersiare / publique) /
 
 num de tel pere: 06 09 11 61 49
 devise card hero
-certif -> Bureau veritas diagnostiqueur immo
-assurance : LSN assurance
 partenaires => caroussel
 loc: paris entrain muross - petite / grande courone
 basé a issy / boulogne
- 
- - FAQ
+
 
 regarder adresse mail pro via herbergement
 
-rappel:
-SVG format
-textes
-logo originel

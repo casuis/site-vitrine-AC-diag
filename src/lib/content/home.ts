@@ -1,6 +1,7 @@
 import type { LucideIcon } from "lucide-react"
 import {
   BadgeCheck,
+  Bug,
   CalendarCheck2,
   Clock3,
   FileText,
@@ -47,6 +48,11 @@ export const diagnostics: DiagnosticItem[] = [
     title: "ERP",
     text: "Etat des risques et pollutions avec donnees locales actualisees.",
     icon: Waves,
+  },
+  {
+    title: "Termites",
+    text: "Diagnostic de l'existence de termites et des risques de dégradation structurelle.",
+    icon: Bug,
   },
 ]
 

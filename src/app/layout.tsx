@@ -1,6 +1,9 @@
 import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
 
+import { SiteFooter } from "@/components/site-footer"
+import { SiteHeader } from "@/components/site-header"
+
 import "./globals.css"
 
 const poppins = Poppins({
@@ -53,7 +56,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${poppins.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${poppins.variable} font-sans antialiased`}>
+        <div className="min-h-screen bg-background text-foreground">
+          <SiteHeader />
+          {children}
+          <SiteFooter />
+        </div>
+      </body>
     </html>
   )
 }

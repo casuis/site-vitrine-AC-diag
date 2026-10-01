@@ -38,11 +38,8 @@ export function ProcessSection() {
       <div className="m-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
         <div className="lg:flex lg:items-center">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-normal text-secondary">
-              Methode
-            </p>
             <h2 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">
-              Une intervention lisible du premier contact au rapport final
+              De la demande au rapport final : un parcours <span className="text-yellow-700">fluide</span>, <span className="text-yellow-700">clair</span> et <span className="text-yellow-700">sans surprise</span>
             </h2>
           </div>
         </div>

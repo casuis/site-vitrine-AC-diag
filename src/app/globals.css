@@ -71,9 +71,31 @@ select {
   }
 }
 
+@keyframes service-arrow {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
 @layer utilities {
   .hero-arrow-slide {
     animation: hero-arrow-slide 0.8s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+
+  .service-arrow {
+    animation: service-arrow 1.3s ease-in-out infinite;
+    transform-origin: center;
     will-change: transform;
   }
 
