@@ -2,7 +2,7 @@
 - DPE (avec mention qualification pour faire sur tour a la def par exemple / categorie d'immeuble) > amiante (avec mention) > plond > gaz > elec > termite > erp
 devis : type de bien: apparte / maison / (locaux tersiare / publique) / 
 		etage si appartement 
-		type : t1, t2...
+		type : t1, t2.../ appartement/ terrain nue
 		nombre de niveaux
 		date de construction
 

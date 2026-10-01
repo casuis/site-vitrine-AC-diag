@@ -26,7 +26,7 @@ export function ServicesSection() {
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
+        <div className="mt-6 grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]">
           <div className="grid gap-3">
             {diagnostics.map((item) => {
               const Icon = item.icon
@@ -37,7 +37,7 @@ export function ServicesSection() {
                   key={item.title}
                   type="button"
                   onClick={() => setSelectedDiagnostic(item)}
-                  className={`flex items-center gap-4 rounded-xl border p-4 text-left transition-colors ${
+                  className={`flex items-center gap-4 rounded-xl border p-4 text-left transition-colors cursor-pointer ${
                     isSelected
                       ? "border-primary bg-primary/5 shadow-[0_4px_12px_-6px_rgba(15,23,42,0.35)]"
                       : "border-border/70 bg-card hover:border-primary/30 hover:bg-muted/50"
