@@ -2,6 +2,7 @@
 import { ArrowLeft } from "lucide-react"
 import { useState } from "react"
 
+import { Text } from "@/components/ui/text"
 import { diagnostics } from "@/lib/content/home"
 
 const loremCards = [
@@ -62,33 +63,37 @@ export function ServicesSection() {
 
         <div className={selectedDiagnostic ? "mt-6 grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]" : "mt-6"}>
           {selectedDiagnostic ? (
-            <div className="grid gap-3 rounded-2xl bg-white p-2 shadow-[0_18px_35px_-24px_rgba(0,0,0,0.8)]">
-              {cards.map((item) => {
-                const Icon = item.icon
-                const isSelected = selectedDiagnostic.title === item.title
+            <div className="flex justify-center lg:justify-start">
+              <div className="flex w-full max-w-[240px] flex-col items-stretch gap-3">
+                {cards.map((item) => {
+                  const Icon = item.icon
+                  const isSelected = selectedDiagnostic.title === item.title
 
-                return (
-                  <button
-                    key={item.title}
-                    type="button"
-                    onClick={() => handleMenuSelect(item.title)}
-                    className={`flex cursor-pointer items-center gap-4 rounded-xl border p-4 text-left transition-all duration-200 ${
-                      isSelected
-                        ? "border-primary bg-primary/5 shadow-[0_6px_18px_-10px_rgba(15,23,42,0.35)]"
-                        : "border-border/70 bg-card hover:border-primary/30 hover:bg-muted/50"
-                    }`}
-                  >
-                    <span
-                      className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-md ${
-                        isSelected ? "bg-primary text-primary-foreground" : "bg-primary/10 text-primary"
+                  return (
+                    <button
+                      key={item.title}
+                      type="button"
+                      onClick={() => handleMenuSelect(item.title)}
+                      className={`flex w-full cursor-pointer items-center gap-4 rounded-xl border p-4 text-left transition-all duration-200 ${
+                        isSelected
+                          ? "border-primary bg-primary/5 shadow-[0_6px_18px_-10px_rgba(15,23,42,0.35)]"
+                          : "border-border/70 bg-card hover:border-primary/30 hover:bg-muted/50"
                       }`}
                     >
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <span className="text-sm font-semibold text-foreground">{item.title}</span>
-                  </button>
-                )
-              })}
+                      <span
+                        className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-md ${
+                          isSelected ? "bg-yellow-700 text-white" : "bg-yellow-700/15 text-yellow-700"
+                        }`}
+                      >
+                        <Icon className="h-5 w-5" />
+                      </span>
+                      <Text as="span" style={3} className="!text-xl !font-bold !tracking-[0.08em] !text-[#164480]">
+                        {item.title}
+                      </Text>
+                    </button>
+                  )
+                })}
+              </div>
             </div>
           ) : null}
 
@@ -114,7 +119,7 @@ export function ServicesSection() {
                   className={`group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border bg-card p-5 text-left transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] ${
                     isExpanded
                       ? "col-span-full min-h-[420px] border-primary/60 bg-primary/5 shadow-[0_18px_42px_-24px_rgba(15,23,42,0.35)]"
-                      : "min-h-[230px] border-border/80 bg-card shadow-[0_18px_42px_-24px_rgba(15,23,42,0.35)] hover:border-primary/40"
+                      : "min-h-[230px] border-border/80 bg-card shadow-[0_18px_42px_-24px_rgba(15,23,42,0.35)] hover:border-primary/40 hover:grayscale-[0.08]"
                   } ${isBusy ? "ring-1 ring-primary/30" : ""}`}
                 >
                   <button
@@ -131,18 +136,35 @@ export function ServicesSection() {
                     <ArrowLeft className="h-4 w-4 service-arrow" />
                   </button>
 
-                  <div className="mt-10 flex items-center justify-between gap-3">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <span className="rounded-full border border-border/80 bg-white/80 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                      {isExpanded ? "Aperçu" : "Diagnostic"}
-                    </span>
+                  <div className="mt-10 w-full">
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex flex-col items-start">
+                        <span
+                          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${
+                            isExpanded ? "bg-yellow-700 text-white" : "bg-yellow-700/15 text-yellow-700"
+                          }`}
+                        >
+                          <Icon className="h-5 w-5" />
+                        </span>
+
+                        <Text as="h3" style={3} className="!mt-3 !text-2xl !font-bold !tracking-[0.08em] !text-[#164480]">
+                          {item.title}
+                        </Text>
+                      </div>
+
+                      <div className="flex flex-col items-end gap-2">
+                        <span className="rounded-full border border-border/80 bg-white/80 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                          {isExpanded ? "Aperçu" : "Avec mention"}
+                        </span>
+                        <span className="rounded-full border-2 border-[var(--ac-brand-700)] bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ac-brand-700)] shadow-[0_8px_18px_-12px_rgba(22,148,75,0.8)]">
+                          Validité: 6 mois
+                        </span>
+                      </div>
+                    </div>
                   </div>
 
                   <div className={`mt-5 flex flex-1 flex-col ${isExpanded ? "justify-start" : "justify-between"}`}>
                     <div>
-                      <h3 className="text-xl font-semibold text-foreground">{item.title}</h3>
                       <p
                         className={`mt-3 text-sm leading-7 text-muted-foreground transition-all duration-300 ${
                           isExpanded ? "opacity-100" : "opacity-80"
@@ -153,8 +175,10 @@ export function ServicesSection() {
                     </div>
 
                     {isExpanded ? (
-                      <div className="mt-5 rounded-xl bg-white/80 p-4 text-left shadow-[inset_0_0_0_1px_rgba(15,23,42,0.04)]">
-                        <p className="text-sm leading-7 text-foreground/80">{item.description}</p>
+                      <div className="mt-5 rounded-xl bg-yellow-700/15 p-4 text-left text-[var(--ac-brand-900)] shadow-[inset_0_0_0_1px_rgba(15,23,42,0.04)]">
+                        <p className="text-lg leading-8 text-[var(--ac-brand-900)] sm:text-xl sm:leading-9">
+                          {item.description} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                       </div>
                     ) : null}
                   </div>

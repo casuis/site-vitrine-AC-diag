@@ -54,7 +54,7 @@ export function ProcessSection() {
                 {index + 1}
               </div>
               <div>
-                <h3 className="font-semibold ac-brand-text content-center">{step}</h3>
+                <h3 className="font-semibold text-green-700 content-center">{step}</h3>
                 <p className="mt-2 text-sm leading-6 text-muted-foreground">
                   AC Diagnostics vous aide a identifier les pieces utiles, organiser le passage et transmettre les elements attendus par les professionnels de la transaction.
                 </p>

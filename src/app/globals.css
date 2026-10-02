@@ -4,10 +4,10 @@
 @theme {
   --font-sans: "var(--font-poppins)", "Segoe UI", sans-serif;
   --color-blue-700: #164480;
-  --color-green-700: #5b965a;
+  --color-green-700: var(--ac-brand-700);
   --color-yellow-700: #f2b933;
   --color-jaune-700: #f2b933;
-  --color-vert-700: #5b965a;
+  --color-vert-700: var(--ac-brand-700);
   --color-background: hsl(0 0% 100%);
   --color-foreground: #164480;
   --color-card: hsl(0 0% 100%);
@@ -87,6 +87,27 @@ select {
   }
 }
 
+@keyframes phone-vibrate {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-9deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  60% {
+    transform: rotate(-7deg);
+  }
+  80% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @layer utilities {
   .hero-arrow-slide {
     animation: hero-arrow-slide 0.8s ease-in-out infinite alternate;
@@ -95,6 +116,12 @@ select {
 
   .service-arrow {
     animation: service-arrow 1.3s ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  .phone-vibrate {
+    animation: phone-vibrate 0.9s ease-in-out 3;
     transform-origin: center;
     will-change: transform;
   }

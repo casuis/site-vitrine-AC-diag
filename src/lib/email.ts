@@ -34,7 +34,7 @@ export async function sendContactEmail(data: ContactFormData) {
   const { resend, fromEmail, toEmail } = getResendClient()
   const html = `
     <h1>Nouvelle demande de devis</h1>
-    <p>Un visiteur a soumis le formulaire de contact depuis le site AC Diagnostics.</p>
+    <p>Un visiteur a soumis le formulaire de contact depuis le site DiagOuest.</p>
     <ul>
       <li><strong>Nom :</strong> ${data.name}</li>
       <li><strong>Téléphone :</strong> ${data.phone}</li>

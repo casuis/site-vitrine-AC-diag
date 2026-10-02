@@ -80,12 +80,12 @@ export function SiteHeader() {
             aria-label="Appeler AC Diagnostics"
             className={
               isScrolled
-                ? "border-primary bg-white text-primary shadow-[0_12px_28px_-18px_rgba(15,23,42,0.6)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
-                : "border-white bg-white text-black shadow-[0_14px_30px_-18px_rgba(15,23,42,0.68)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
+                ? "group border-primary bg-white text-primary shadow-[0_12px_28px_-18px_rgba(15,23,42,0.6)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
+                : "group border-white bg-white text-black shadow-[0_14px_30px_-18px_rgba(15,23,42,0.68)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
             }
           >
-            <a href="tel:+33000000000">
-              <Phone className="h-4 w-4" />
+            <a href="tel:+33000000000" className="inline-flex items-center justify-center">
+              <Phone className="h-4 w-4 transition-transform duration-150 ease-out group-hover:animate-[phone-vibrate_0.18s_linear_3]" />
             </a>
           </Button>
         </div>

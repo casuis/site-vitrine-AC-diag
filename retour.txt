@@ -4,14 +4,21 @@ devis : type de bien: apparte / maison / (locaux tersiare / publique) /
 		etage si appartement 
 		type : t1, t2.../ appartement/ terrain nue
 		nombre de niveaux
+		nombre de pieces
 		date de construction
 
 num de tel pere: 06 09 11 61 49
 devise card hero
 partenaires => caroussel
+avoir les avis clients
+changer le btn devis gratuit quand je suis sur devis
+annimation telephone header
+arranger les liens du header
 loc: paris entrain muross - petite / grande courone
 basé a issy / boulogne
 
 
 regarder adresse mail pro via herbergement
+
+
 

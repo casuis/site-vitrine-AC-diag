@@ -34,13 +34,6 @@ export function HeroSection() {
                   <ArrowRight className="hero-arrow-slide h-4 w-4 shrink-0 text-white transition-colors duration-300 ease-out group-hover:text-[#164480]" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                size="lg"
-                className="border border-white bg-white uppercase tracking-[0.2em] text-black shadow-[0_8px_20px_rgba(15,23,42,0.15)] transition-colors hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
-              >
-                {/* TODO verifier si garder */}
-              </Button>
             </div>
           </div>
         </div>
@@ -60,23 +53,6 @@ export function HeroSection() {
                   <div className="mt-1 text-center text-[11px] text-muted-foreground">{value}</div>
                 </div>
               ))}
-            </div>
-
-            <div className="hidden items-center justify-center gap-4 lg:flex">
-              <Image
-                src="/bv-logo.png"
-                alt="Logo BV"
-                width={180}
-                height={180}
-                className="h-[180px] w-[180px] object-contain drop-shadow-[0_16px_28px_rgba(15,23,42,0.12)]"
-              />
-              <Image
-                src="/LSN-Assurances.png"
-                alt="Logo LSN assurances"
-                width={180}
-                height={180}
-                className="h-[180px] w-[180px] object-contain drop-shadow-[0_16px_28px_rgba(15,23,42,0.12)]"
-              />
             </div>
           </div>
         </div>
