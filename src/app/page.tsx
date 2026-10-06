@@ -46,7 +46,7 @@ export default function HomePage() {
       <ServicesSection />
       <ProcessSection />
 
-      <section className="border-t border-border/60 bg-muted/30 py-20">
+      <section id="faq" className="scroll-mt-[100px] border-t border-border/60 bg-muted/30 py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-primary">

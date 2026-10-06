@@ -61,7 +61,7 @@ export function SiteHeader() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex">
+        <nav className="hidden flex-1 items-center justify-center gap-7 md:flex">
           <a
             className="group relative inline-flex items-center text-[#164480] transition-colors hover:text-[#164480]/75"
             href="#services"
@@ -76,6 +76,14 @@ export function SiteHeader() {
             onClick={(event) => handleSectionClick(event, "methode")}
           >
             <Text as="span" style={3} text="Methode" />
+            <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-[#164480] transition-transform duration-300 ease-out group-hover:scale-x-100" />
+          </a>
+          <a
+            className="group relative inline-flex items-center text-[#164480] transition-colors hover:text-[#164480]/75"
+            href="#faq"
+            onClick={(event) => handleSectionClick(event, "faq")}
+          >
+            <Text as="span" style={3} text="FAQ" />
             <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-[#164480] transition-transform duration-300 ease-out group-hover:scale-x-100" />
           </a>
         </nav>

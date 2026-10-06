@@ -50,7 +50,7 @@ export function ServicesSection() {
     : cards
 
   return (
-    <section id="services" className="scroll-mt-[100px] w-full max-w-full border-y bg-white py-20">
+    <section id="services" className="w-full max-w-full border-y bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-normal text-secondary">
@@ -105,6 +105,8 @@ export function ServicesSection() {
               const Icon = item.icon
               const isBusy = selectedDiagnostic?.title === item.title
               const isExpanded = expandedCard === item.title
+
+              const showMentionBadge = item.title === "Amiante"
 
               return (
                 <div
@@ -166,9 +168,11 @@ export function ServicesSection() {
                       </div>
 
                       <div className="flex flex-col items-end gap-2">
-                        <span className="rounded-full border border-border/80 bg-white/80 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                          {isExpanded ? "Aperçu" : "Avec mention"}
-                        </span>
+                        {showMentionBadge ? (
+                          <span className="rounded-full border border-border/80 bg-white/80 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                            {isExpanded ? "Aperçu" : "Avec mention"}
+                          </span>
+                        ) : null}
                         <span className="rounded-full border-2 border-[var(--ac-brand-700)] bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ac-brand-700)] shadow-[0_8px_18px_-12px_rgba(22,148,75,0.8)]">
                           Validité: 6 mois
                         </span>

@@ -13,7 +13,6 @@ partenaires => caroussel
 avoir les avis clients
 changer le btn devis gratuit quand je suis sur devis
 annimation telephone header
-arranger les liens du header
 loc: paris entrain muross - petite / grande courone
 basé a issy / boulogne
 
