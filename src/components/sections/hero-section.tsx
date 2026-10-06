@@ -8,7 +8,7 @@ import { heroHighlights } from "@/lib/content/home"
 
 export function HeroSection() {
   return (
-    <section className="relative w-[100%] max-w-[100vw]">
+    <section className="relative w-full max-w-full">
       <div className="absolute inset-0">
         <Image
           src="/hero-diagnostic-immobilier-1.png"

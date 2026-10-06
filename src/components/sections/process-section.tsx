@@ -47,15 +47,15 @@ export function ProcessSection() {
           {processSteps.map((step, index) => (
             <div
               key={step}
-              className={`process-step ${isVisible ? "is-visible" : ""} flex gap-8 rounded-xl border bg-card p-5 shadow-[0_10px_30px_-12px_rgba(15,23,42,0.25)]`}
+              className={`process-step ${isVisible ? "is-visible" : ""} flex gap-4 rounded-xl border bg-card p-5 shadow-[0_10px_30px_-12px_rgba(15,23,42,0.25)] sm:gap-8`}
               style={{ transitionDelay: `${index * 260}ms` }}
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-yellow-700 text-sm font-bold text-secondary-foreground">
                 {index + 1}
               </div>
-              <div>
-                <h3 className="font-semibold text-green-700 content-center">{step}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              <div className="flex min-w-0 flex-1 flex-col items-start text-left sm:items-start">
+                <h3 className="w-full text-left font-semibold text-green-700 sm:text-left">{step}</h3>
+                <p className="mt-2 w-full text-left text-sm leading-6 text-muted-foreground sm:text-left">
                   AC Diagnostics vous aide a identifier les pieces utiles, organiser le passage et transmettre les elements attendus par les professionnels de la transaction.
                 </p>
               </div>

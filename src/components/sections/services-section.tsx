@@ -50,7 +50,7 @@ export function ServicesSection() {
     : cards
 
   return (
-    <section id="services" className="w-[100%] max-w-[100vw] border-y bg-white py-20">
+    <section id="services" className="w-full max-w-full border-y bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-normal text-secondary">
@@ -74,7 +74,7 @@ export function ServicesSection() {
                       key={item.title}
                       type="button"
                       onClick={() => handleMenuSelect(item.title)}
-                      className={`flex w-full cursor-pointer items-center gap-4 rounded-xl border p-4 text-left transition-all duration-200 ${
+                      className={`flex w-full cursor-pointer items-center gap-4 rounded-xl border p-4 text-left transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
                         isSelected
                           ? "border-primary bg-primary/5 shadow-[0_6px_18px_-10px_rgba(15,23,42,0.35)]"
                           : "border-border/70 bg-card hover:border-primary/30 hover:bg-muted/50"
@@ -97,7 +97,10 @@ export function ServicesSection() {
             </div>
           ) : null}
 
-          <div className={expandedCard ? "grid" : "grid gap-4 sm:grid-cols-2 xl:grid-cols-3"}>
+          <div
+            key={selectedDiagnostic?.title ?? "default"}
+            className={`content-fade-in ${expandedCard ? "grid" : "grid gap-4 sm:grid-cols-2 xl:grid-cols-3"}`}
+          >
             {displayedCards.map((item) => {
               const Icon = item.icon
               const isBusy = selectedDiagnostic?.title === item.title
@@ -116,12 +119,22 @@ export function ServicesSection() {
                       handleCardClick(item.title)
                     }
                   }}
-                  className={`group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border bg-card p-5 text-left transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] ${
+                  className={`group relative flex cursor-pointer flex-col overflow-hidden rounded-2xl border bg-card p-5 text-left transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.01] ${
                     isExpanded
                       ? "col-span-full min-h-[420px] border-primary/60 bg-primary/5 shadow-[0_18px_42px_-24px_rgba(15,23,42,0.35)]"
-                      : "min-h-[230px] border-border/80 bg-card shadow-[0_18px_42px_-24px_rgba(15,23,42,0.35)] hover:border-primary/40 hover:grayscale-[0.08]"
+                      : "min-h-[230px] border-border/80 bg-card shadow-[0_18px_42px_-24px_rgba(15,23,42,0.35)] hover:border-primary/40"
                   } ${isBusy ? "ring-1 ring-primary/30" : ""}`}
                 >
+                  {!isBusy && !isExpanded ? (
+                    <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center rounded-2xl bg-[#3a3a3a]/20 opacity-0 transition-all duration-300 ease-out group-hover:opacity-100">
+                      <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#3a3a3a]/70 text-white shadow-lg ring-1 ring-white/10 backdrop-blur-[1px]">
+                        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <circle cx="11" cy="11" r="6" />
+                          <path d="M16 16L21 21" />
+                        </svg>
+                      </span>
+                    </div>
+                  ) : null}
                   <button
                     type="button"
                     aria-label="Revenir au mode grille"

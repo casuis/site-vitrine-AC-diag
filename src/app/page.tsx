@@ -41,7 +41,7 @@ export default function HomePage() {
   }
 
   return (
-    <main className="w-[100%] max-w-[100vw]">
+    <main className="w-full max-w-full">
       <HeroSection />
       <ServicesSection />
       <ProcessSection />
