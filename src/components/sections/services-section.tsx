@@ -50,7 +50,7 @@ export function ServicesSection() {
     : cards
 
   return (
-    <section id="services" className="w-full max-w-full border-y bg-white py-20">
+    <section id="services" className="scroll-mt-[100px] w-full max-w-full border-y bg-white py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-normal text-secondary">

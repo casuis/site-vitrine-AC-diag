@@ -29,6 +29,22 @@ export function SiteHeader() {
     }
   }
 
+  const handleSectionClick = (event: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    if (typeof window === "undefined") return
+
+    const target = document.getElementById(sectionId)
+    const header = document.querySelector("header")
+
+    if (!target) return
+
+    event.preventDefault()
+
+    const offset = header ? header.getBoundingClientRect().height : 0
+    const top = target.getBoundingClientRect().top + window.scrollY - offset
+
+    window.scrollTo({ top, behavior: "smooth" })
+  }
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
@@ -49,6 +65,7 @@ export function SiteHeader() {
           <a
             className="group relative inline-flex items-center text-[#164480] transition-colors hover:text-[#164480]/75"
             href="#services"
+            onClick={(event) => handleSectionClick(event, "services")}
           >
             <Text as="span" style={3} text="Diagnostics" />
             <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-[#164480] transition-transform duration-300 ease-out group-hover:scale-x-100" />
@@ -56,6 +73,7 @@ export function SiteHeader() {
           <a
             className="group relative inline-flex items-center text-[#164480] transition-colors hover:text-[#164480]/75"
             href="#methode"
+            onClick={(event) => handleSectionClick(event, "methode")}
           >
             <Text as="span" style={3} text="Methode" />
             <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-[#164480] transition-transform duration-300 ease-out group-hover:scale-x-100" />
@@ -80,12 +98,12 @@ export function SiteHeader() {
             aria-label="Appeler AC Diagnostics"
             className={
               isScrolled
-                ? "group border-primary bg-white text-primary shadow-[0_12px_28px_-18px_rgba(15,23,42,0.6)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
-                : "group border-white bg-white text-black shadow-[0_14px_30px_-18px_rgba(15,23,42,0.68)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
+                ? "border-primary bg-white text-primary shadow-[0_12px_28px_-18px_rgba(15,23,42,0.6)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
+                : "border-white bg-white text-black shadow-[0_14px_30px_-18px_rgba(15,23,42,0.68)] hover:border-[#f2b933] hover:bg-[#f2b933] hover:text-[#164480]"
             }
           >
-            <a href="tel:+33000000000" className="inline-flex items-center justify-center">
-              <Phone className="h-4 w-4 transition-transform duration-150 ease-out group-hover:animate-[phone-vibrate_0.18s_linear_3]" />
+            <a href="tel:+33000000000">
+              <Phone className="h-4 w-4" />
             </a>
           </Button>
         </div>

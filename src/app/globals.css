@@ -37,11 +37,16 @@
   border-color: var(--color-border);
 }
 
+:root {
+  --header-height: 84px;
+}
+
 html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
   font-family: "var(--font-poppins)", "Segoe UI", sans-serif;
 }
 

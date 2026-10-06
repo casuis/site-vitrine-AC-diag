@@ -15,9 +15,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   // Base de métadonnées utilisée par les moteurs de recherche et les previews sociaux.
   metadataBase: new URL("https://ac-diagnostics.fr"),
-  title: "AC Diagnostics | Diagnostics immobiliers obligatoires",
+  title: "DiagOuest",
   description:
-    "AC Diagnostics réalise vos diagnostics immobiliers obligatoires (DPE, amiante, plomb, ERP, électricité, gaz) avec un devis rapide et un accompagnement clair.",
+    "DiagOuest réalise vos diagnostics immobiliers obligatoires (DPE, amiante, plomb, ERP, électricité, gaz) avec un devis rapide et un accompagnement clair.",
   keywords: [
     "diagnostics immobiliers",
     "DPE",
@@ -33,19 +33,22 @@ export const metadata: Metadata = {
     canonical: "https://ac-diagnostics.fr",
   },
   openGraph: {
-    title: "AC Diagnostics | Diagnostics immobiliers obligatoires",
+    title: "DiagOuest",
     description:
-      "AC Diagnostics réalise vos diagnostics immobiliers obligatoires avec un devis rapide et un accompagnement clair.",
+      "DiagOuest réalise vos diagnostics immobiliers obligatoires avec un devis rapide et un accompagnement clair.",
     url: "https://ac-diagnostics.fr",
-    siteName: "AC Diagnostics",
+    siteName: "DiagOuest",
     locale: "fr_FR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AC Diagnostics | Diagnostics immobiliers obligatoires",
+    title: "DiagOuest",
     description:
       "Diagnostics immobiliers obligatoires : DPE, amiante, plomb, ERP et devis rapide.",
+  },
+  icons: {
+    icon: "/Diagouest_favicon.png",
   },
 }
 
