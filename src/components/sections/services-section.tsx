@@ -70,7 +70,7 @@ export function ServicesSection() {
         >
           {selectedDiagnostic ? (
             <div className="flex justify-center lg:justify-start">
-              <div className="flex w-full max-w-[200px] flex-col items-stretch gap-2 sm:max-w-[220px] lg:max-w-[240px]">
+              <div className="grid w-full max-w-full grid-cols-3 gap-2 sm:gap-3 md:flex md:max-w-[220px] md:flex-col md:items-stretch lg:max-w-[240px]">
                 {cards.map((item) => {
                   const Icon = item.icon
                   const isSelected = selectedDiagnostic.title === item.title
@@ -80,20 +80,24 @@ export function ServicesSection() {
                       key={item.title}
                       type="button"
                       onClick={() => handleMenuSelect(item.title)}
-                      className={`flex w-full cursor-pointer items-center gap-4 rounded-xl border p-4 text-left transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                      className={`flex min-w-0 w-full cursor-pointer items-center justify-center gap-2 rounded-xl border p-2 text-left transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] sm:gap-3 sm:p-3 md:justify-start md:gap-4 md:p-4 ${
                         isSelected
                           ? "border-primary bg-primary/5 shadow-[0_6px_18px_-10px_rgba(15,23,42,0.35)]"
                           : "border-border/70 bg-card hover:border-primary/30 hover:bg-muted/50"
                       }`}
                     >
                       <span
-                        className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-md ${
+                        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-md sm:h-10 sm:w-10 ${
                           isSelected ? "bg-yellow-700 text-white" : "bg-yellow-700/15 text-yellow-700"
                         }`}
                       >
-                        <Icon className="h-5 w-5" />
+                        <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                       </span>
-                      <Text as="span" style={3} className="!text-xl !font-bold !tracking-[0.08em] !text-[#164480]">
+                      <Text
+                        as="span"
+                        style={3}
+                        className="max-w-full break-words text-center !text-[0.6rem] !font-bold !leading-[1.1] !tracking-[0.05em] !text-[#164480] md:text-left md:!text-[0.95rem] md:!tracking-[0.08em]"
+                      >
                         {item.title}
                       </Text>
                     </button>
@@ -157,9 +161,9 @@ export function ServicesSection() {
                     <ArrowLeft className="h-4 w-4 service-arrow" />
                   </button>
 
-                  <div className="mt-10 w-full">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex flex-col items-start">
+                  <div className="mt-10 w-full min-w-0">
+                    <div className="flex items-start justify-between gap-3 sm:gap-4">
+                      <div className="flex min-w-0 flex-col items-start">
                         <span
                           className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${
                             isExpanded ? "bg-yellow-700 text-white" : "bg-yellow-700/15 text-yellow-700"
@@ -168,12 +172,16 @@ export function ServicesSection() {
                           <Icon className="h-5 w-5" />
                         </span>
 
-                        <Text as="h3" style={3} className="!mt-3 !text-2xl !font-bold !tracking-[0.08em] !text-[#164480]">
+                        <Text
+                          as="h3"
+                          style={3}
+                          className="!mt-3 max-w-full break-words !text-xl !font-bold !leading-tight !tracking-[0.08em] !text-[#164480] sm:!text-2xl"
+                        >
                           {item.title}
                         </Text>
                       </div>
 
-                      <div className="flex flex-col items-end gap-2">
+                      <div className="flex max-w-[40%] flex-col items-end gap-2 text-right">
                         {showMentionBadge ? (
                           <span className="rounded-full border border-border/80 bg-white/80 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
                             {isExpanded ? "Aperçu" : "Avec mention"}
@@ -187,9 +195,9 @@ export function ServicesSection() {
                   </div>
 
                   <div className={`mt-5 flex flex-1 flex-col ${isExpanded ? "justify-start" : "justify-between"}`}>
-                    <div>
+                    <div className="min-w-0">
                       <p
-                        className={`mt-3 text-sm leading-7 text-muted-foreground transition-all duration-300 ${
+                        className={`mt-3 max-w-full break-words text-sm leading-6 text-muted-foreground transition-all duration-300 sm:leading-7 ${
                           isExpanded ? "opacity-100" : "opacity-80"
                         }`}
                       >
