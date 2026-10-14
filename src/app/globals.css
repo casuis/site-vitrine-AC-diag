@@ -125,6 +125,15 @@ select {
   }
 }
 
+@keyframes partners-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 @layer utilities {
   .hero-arrow-slide {
     animation: hero-arrow-slide 0.8s ease-in-out infinite alternate;
@@ -160,5 +169,16 @@ select {
   .process-step.is-visible {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  .partners-track {
+    animation: partners-scroll 34s linear infinite;
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .partners-track {
+      animation: none;
+    }
   }
 }

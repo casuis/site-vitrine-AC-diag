@@ -30,11 +30,11 @@ export default function DevisPage() {
             <div className="mt-6 grid gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
-                00 00 00 00 00
+                06 09 11 61 49
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                contact@ac-diagnostics.fr
+                acdiagnostics92@gmail.com
               </div>
             </div>
           </div>

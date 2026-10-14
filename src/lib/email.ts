@@ -5,6 +5,11 @@ export interface ContactFormData {
   phone: string
   email: string
   propertyType: string
+  propertySubtype: string
+  floor?: string
+  levels: string
+  rooms: string
+  constructionDate?: string
   city: string
   address: string
   project: string
@@ -40,6 +45,11 @@ export async function sendContactEmail(data: ContactFormData) {
       <li><strong>Téléphone :</strong> ${data.phone}</li>
       <li><strong>Email :</strong> ${data.email}</li>
       <li><strong>Type de bien :</strong> ${data.propertyType}</li>
+      <li><strong>Type :</strong> ${data.propertySubtype}</li>
+      ${data.floor ? `<li><strong>Étage :</strong> ${data.floor}</li>` : ""}
+      <li><strong>Nombre de niveaux :</strong> ${data.levels}</li>
+      <li><strong>Nombre de pièces :</strong> ${data.rooms}</li>
+      ${data.constructionDate ? `<li><strong>Date de construction :</strong> ${data.constructionDate}</li>` : ""}
       <li><strong>Ville :</strong> ${data.city}</li>
       <li><strong>Adresse complète :</strong> ${data.address}</li>
       <li><strong>Projet :</strong> ${data.project}</li>
@@ -49,7 +59,7 @@ export async function sendContactEmail(data: ContactFormData) {
     <p>Envoyé le ${new Date().toLocaleString("fr-FR")}</p>
   `
 
-  const text = `Nouvelle demande de devis\n\nNom : ${data.name}\nTéléphone : ${data.phone}\nEmail : ${data.email}\nType de bien : ${data.propertyType}\nVille : ${data.city}\nAdresse complète : ${data.address}\nProjet : ${data.project}\n\nDétails utiles : ${data.message ?? "Aucun détail supplémentaire fourni."}\n\nEnvoyé le ${new Date().toLocaleString("fr-FR")}`
+  const text = `Nouvelle demande de devis\n\nNom : ${data.name}\nTéléphone : ${data.phone}\nEmail : ${data.email}\nType de bien : ${data.propertyType}\nType : ${data.propertySubtype}\nÉtage : ${data.floor || "Non renseigné"}\nNombre de niveaux : ${data.levels}\nNombre de pièces : ${data.rooms}\nDate de construction : ${data.constructionDate || "Non renseignée"}\nVille : ${data.city}\nAdresse complète : ${data.address}\nProjet : ${data.project}\n\nDétails utiles : ${data.message ?? "Aucun détail supplémentaire fourni."}\n\nEnvoyé le ${new Date().toLocaleString("fr-FR")}`
 
   return resend.emails.send({
     from: fromEmail,

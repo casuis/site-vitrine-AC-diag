@@ -61,10 +61,16 @@ export function ServicesSection() {
           </h2>
         </div>
 
-        <div className={selectedDiagnostic ? "mt-6 grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)]" : "mt-6"}>
+        <div
+          className={
+            selectedDiagnostic
+              ? "mt-6 grid gap-3 sm:gap-6 md:grid-cols-[220px_minmax(0,1fr)] lg:grid-cols-[280px_minmax(0,1fr)]"
+              : "mt-6"
+          }
+        >
           {selectedDiagnostic ? (
             <div className="flex justify-center lg:justify-start">
-              <div className="flex w-full max-w-[240px] flex-col items-stretch gap-3">
+              <div className="flex w-full max-w-[200px] flex-col items-stretch gap-2 sm:max-w-[220px] lg:max-w-[240px]">
                 {cards.map((item) => {
                   const Icon = item.icon
                   const isSelected = selectedDiagnostic.title === item.title

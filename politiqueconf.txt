@@ -1,0 +1,155 @@
+# Politique de confidentialité
+
+**Dernière mise à jour : 13 octobre 2026**
+
+## 1. Introduction
+
+La présente politique de confidentialité a pour objectif d'informer les utilisateurs du site internet DiagOuest sur la manière dont leurs données personnelles sont collectées, utilisées, conservées et protégées.
+
+DiagOuest accorde une importance particulière au respect de la vie privée et s'engage à traiter les données personnelles conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés.
+
+Cette politique concerne les données collectées lors de la navigation sur le site et, notamment, lors de l'utilisation du formulaire de demande de devis pour des prestations de diagnostic immobilier.
+
+## 2. Responsable du traitement
+
+Le responsable du traitement des données personnelles est :
+
+- **Nom commercial :** DiagOuest
+- **Raison sociale :** [À compléter]
+- **Statut juridique :** [À compléter]
+- **Adresse du siège social :** [À compléter]
+- **Adresse e-mail de contact :** [À compléter]
+
+Le responsable du traitement détermine les finalités et les moyens de collecte et d'utilisation des données personnelles.
+
+Pour toute question relative à cette politique ou au traitement de vos données personnelles, vous pouvez contacter DiagOuest à l'adresse e-mail indiquée ci-dessus.
+
+## 3. Données personnelles collectées
+
+Dans le cadre de son activité, DiagOuest peut collecter les catégories de données suivantes :
+
+- **Coordonnées :** adresse e-mail et numéro de téléphone.
+- **Informations relatives au bien immobilier :** adresse physique du bien et type de bien concerné (maison, appartement ou autre catégorie proposée dans le formulaire).
+- **Informations relatives à la demande :** détails communiqués volontairement par l'utilisateur concernant sa demande de devis et les diagnostics souhaités.
+- **Données techniques de navigation :** certaines informations techniques peuvent être collectées pour assurer le fonctionnement, la sécurité et la maintenance du site, selon les outils effectivement utilisés.
+
+Les données demandées dans le formulaire sont limitées à celles nécessaires au traitement de la demande de devis. Les champs obligatoires sont identifiés dans le formulaire.
+
+## 4. Finalités et bases légales du traitement
+
+Les données personnelles sont collectées pour les finalités suivantes :
+
+**Gestion des demandes de devis**
+
+Les coordonnées et les informations relatives au bien immobilier permettent à DiagOuest de prendre contact avec le demandeur, de comprendre son besoin, d'évaluer les prestations nécessaires et de lui transmettre une proposition commerciale.
+
+Base légale : mesures précontractuelles prises à la demande de la personne concernée.
+
+**Suivi des échanges commerciaux**
+
+Les données peuvent être utilisées pour assurer le suivi de la demande, répondre aux questions complémentaires et organiser les échanges nécessaires à la préparation d'une éventuelle prestation.
+
+Base légale : mesures précontractuelles ou exécution du contrat, selon la situation.
+
+**Gestion des prestations et obligations légales**
+
+Si une prestation est commandée, certaines données peuvent être conservées pour assurer son suivi, gérer la relation client et respecter les obligations légales et comptables applicables.
+
+Base légale : exécution du contrat et respect des obligations légales applicables.
+
+**Sécurité et fonctionnement du site**
+
+Des données techniques peuvent être traitées pour assurer le bon fonctionnement du site, détecter les incidents et prévenir les utilisations frauduleuses.
+
+Base légale : intérêt légitime de DiagOuest à assurer la sécurité et la disponibilité de ses services, lorsque cette base est applicable.
+
+Les données collectées dans le cadre d'une demande de devis ne sont pas utilisées à des fins de prospection commerciale sans fondement juridique approprié.
+
+## 5. Destinataires des données
+
+Les données personnelles sont accessibles uniquement aux personnes qui en ont besoin pour traiter la demande et assurer le fonctionnement du site.
+
+Elles peuvent notamment être accessibles :
+
+- aux personnes habilitées de DiagOuest ;
+- aux prestataires techniques chargés de l'hébergement, de la maintenance ou de la sécurité du site ;
+- aux prestataires de messagerie ou de traitement des demandes, si de tels services sont utilisés ;
+- aux autorités compétentes lorsque la loi l'exige.
+
+Ces destinataires ne peuvent accéder aux données que dans la limite de leurs missions et des finalités prévues.
+
+DiagOuest ne vend pas les données personnelles des utilisateurs à des tiers.
+
+## 6. Durée de conservation des données
+
+Les données personnelles sont conservées pendant une durée limitée, proportionnée à la finalité de leur collecte.
+
+À titre indicatif, les durées suivantes peuvent être appliquées, sous réserve de validation par DiagOuest :
+
+- **Demande de devis sans suite :** jusqu'à 3 ans à compter du dernier contact émanant du prospect, lorsque les données sont conservées à des fins de prospection commerciale.
+- **Client ayant commandé une prestation :** pendant la durée nécessaire à la gestion de la relation contractuelle, puis selon les durées légales applicables aux documents concernés.
+- **Documents comptables :** pendant la durée légale de conservation applicable, notamment 10 ans pour les pièces comptables concernées.
+- **Données techniques et journaux de sécurité :** pendant la durée strictement nécessaire à la sécurité, au diagnostic des incidents et aux obligations applicables.
+
+À l'expiration de ces durées, les données sont supprimées ou anonymisées, sauf obligation légale ou nécessité de conservation pour la constatation, l'exercice ou la défense de droits en justice.
+
+## 7. Sécurité des données
+
+DiagOuest met en œuvre des mesures techniques et organisationnelles adaptées afin de protéger les données personnelles contre la perte, la destruction, l'altération, la divulgation ou l'accès non autorisé.
+
+Ces mesures peuvent notamment comprendre la sécurisation des échanges, la gestion des accès, la limitation des habilitations et la maintenance des systèmes utilisés.
+
+Les mesures effectivement mises en œuvre sont adaptées aux outils et aux risques associés au site.
+
+## 8. Droits des utilisateurs
+
+Conformément à la réglementation applicable, vous disposez, selon les conditions prévues par le RGPD, des droits suivants :
+
+- **Droit d'accès :** obtenir la confirmation que vos données sont traitées et en recevoir une copie.
+- **Droit de rectification :** demander la correction de données inexactes ou incomplètes.
+- **Droit à l'effacement :** demander la suppression de vos données lorsque les conditions légales sont réunies.
+- **Droit à la limitation :** demander, dans certains cas, la suspension temporaire de l'utilisation de vos données.
+- **Droit d'opposition :** vous opposer à certains traitements fondés sur l'intérêt légitime.
+- **Droit à la portabilité :** récupérer les données que vous avez fournies dans un format structuré et couramment utilisé, lorsque ce droit est applicable.
+
+Pour exercer vos droits, vous pouvez adresser votre demande à :
+
+**E-mail :** [Adresse e-mail de contact]
+
+Vous pouvez également écrire à DiagOuest à l'adresse postale indiquée dans la présente politique.
+
+Une réponse vous sera apportée dans le délai légal applicable, généralement dans un délai d'un mois à compter de la réception de la demande. Ce délai peut être prolongé dans les conditions prévues par la réglementation.
+
+Si vous estimez, après avoir contacté DiagOuest, que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la Commission nationale de l'informatique et des libertés (CNIL) :
+
+https://www.cnil.fr/fr/plaintes
+
+## 9. Cookies et autres traceurs
+
+Le site peut utiliser des cookies ou autres traceurs nécessaires à son fonctionnement et, le cas échéant, à la mesure d'audience ou à d'autres fonctionnalités.
+
+Les cookies strictement nécessaires au fonctionnement du site sont traités conformément aux règles applicables. Les traceurs soumis au consentement ne sont déposés qu'après obtention du consentement de l'utilisateur, lorsque celui-ci est requis.
+
+Les modalités de gestion des cookies, les finalités poursuivies et les moyens de retirer son consentement sont présentés dans le dispositif de gestion des cookies du site, lorsqu'il est nécessaire.
+
+## 10. Transferts de données hors de l'Union européenne
+
+DiagOuest veille à ce que les données personnelles soient traitées dans le respect de la réglementation applicable.
+
+Si un prestataire utilisé par le site entraîne un transfert de données personnelles vers un pays situé en dehors de l'Union européenne ou de l'Espace économique européen, ce transfert doit être encadré conformément aux exigences du RGPD.
+
+Les éventuels transferts et les garanties applicables doivent être précisés en fonction des services réellement utilisés par le site.
+
+## 11. Modification de la politique de confidentialité
+
+DiagOuest peut modifier la présente politique afin de tenir compte des évolutions légales, réglementaires, techniques ou des changements dans son activité.
+
+La version applicable est celle publiée sur cette page à la date de consultation. La date de dernière mise à jour est indiquée en haut du document.
+
+## 12. Contact
+
+Pour toute question relative à la présente politique de confidentialité ou à l'utilisation de vos données personnelles, vous pouvez contacter DiagOuest :
+
+- **E-mail :** [Adresse e-mail de contact]
+- **Adresse postale :** [Adresse complète de l'entreprise]
+

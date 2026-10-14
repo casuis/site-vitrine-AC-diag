@@ -1,7 +1,18 @@
 import { NextResponse } from "next/server"
 import { ContactFormData, sendContactEmail } from "@/lib/email"
 
-const requiredFields = ["name", "phone", "email", "propertyType", "city", "address", "project"]
+const requiredFields = [
+  "name",
+  "phone",
+  "email",
+  "propertyType",
+  "propertySubtype",
+  "levels",
+  "rooms",
+  "city",
+  "address",
+  "project",
+]
 
 export async function POST(request: Request) {
   let payload: unknown
@@ -34,6 +45,12 @@ export async function POST(request: Request) {
     phone: String(formData.phone ?? "").trim(),
     email: String(formData.email ?? "").trim(),
     propertyType: String(formData.propertyType ?? "").trim(),
+    propertySubtype: String(formData.propertySubtype ?? "").trim(),
+    floor: typeof formData.floor === "string" ? formData.floor.trim() : "",
+    levels: String(formData.levels ?? "").trim(),
+    rooms: String(formData.rooms ?? "").trim(),
+    constructionDate:
+      typeof formData.constructionDate === "string" ? formData.constructionDate.trim() : "",
     city: String(formData.city ?? "").trim(),
     address: String(formData.address ?? "").trim(),
     project: String(formData.project ?? "").trim(),

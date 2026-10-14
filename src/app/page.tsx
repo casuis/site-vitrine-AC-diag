@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { ChevronDown } from "lucide-react"
 import { useState } from "react"
 
@@ -7,6 +8,11 @@ import { HeroSection } from "@/components/sections/hero-section"
 import { ProcessSection } from "@/components/sections/process-section"
 import { QuoteSection } from "@/components/sections/quote-section"
 import { ServicesSection } from "@/components/sections/services-section"
+
+const partnerLogos = Array.from({ length: 8 }, (_, index) => ({
+  id: `partner-${index + 1}`,
+  name: `Partenaire ${index + 1}`,
+}))
 
 const faqs = [
   {
@@ -46,10 +52,42 @@ export default function HomePage() {
       <ServicesSection />
       <ProcessSection />
 
+      <section className="border-y border-border/60 bg-slate-50 py-12 md:py-16">
+        <div className="mx-auto max-w-full px-0 sm:px-0 lg:px-0">
+          <div className="mb-8 px-4 text-center sm:px-6 lg:px-8">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-green-700">
+              Partenaires
+            </p>
+            <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              Ils nous font confiance
+            </h2>
+          </div>
+
+          <div className="overflow-hidden bg-transparent px-0 py-0">
+            <div className="partners-track flex w-max items-center gap-4 md:gap-8 pl-0 md:pl-0">
+              {[...partnerLogos, ...partnerLogos].map((partner, index) => (
+                <div
+                  key={`${partner.id}-${index}`}
+                  className="flex h-24 w-[46vw] shrink-0 items-center justify-center rounded-none bg-transparent px-0 sm:w-[40vw] md:h-32 md:w-[320px]"
+                >
+                  <Image
+                    src="/logo_partenaire_factice.png"
+                    alt={partner.name}
+                    width={320}
+                    height={160}
+                    className="h-16 w-auto object-contain opacity-100 md:h-24"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="faq" className="scroll-mt-[100px] border-t border-border/60 bg-muted/30 py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-primary">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-green-700">
               FAQ
             </p>
             <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Phone } from "lucide-react"
+import { Mail, Phone } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
@@ -7,7 +7,7 @@ export function QuoteSection() {
   return (
     <section id="devis" className="bg-white py-20">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-border/70 bg-card p-8 shadow-[0_10px_30px_-12px_rgba(15,23,42,0.25)]">
+        <div className="rounded-2xl bg-card p-8 shadow-[0_18px_42px_-18px_rgba(15,23,42,0.35)]">
           <p className="text-sm font-semibold uppercase tracking-normal text-secondary">
             Devis rapide
           </p>
@@ -18,16 +18,16 @@ export function QuoteSection() {
             Accédez à un formulaire dédié avec les informations utiles pour préparer votre devis, sans perdre le contexte de votre projet immobilier.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <Link href="/devis">
-                Accéder au formulaire de devis
-                <ArrowRight className="h-4 w-4" />
+            <Button asChild size="lg" className="uppercase tracking-[0.2em]">
+              <Link href="/devis" className="flex items-center gap-2">
+                <Mail className="h-4 w-4 text-white" />
+                Devis Gratuit
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline">
-              <a href="tel:+33000000000">
+            <Button asChild size="lg" variant="outline" className="uppercase tracking-[0.2em]">
+              <a href="tel:+33000000000" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                Nous appeler
+                Appel
               </a>
             </Button>
           </div>
